@@ -1,20 +1,24 @@
 import random
-def throw():
-    resth = random.randrange(2, 13)
+def throw(r):
+    resth = random.randrange(2 + r, 13 + r)
     if resth <= 12 and resth > 10:
+        print(resth)
         print("Critical win")
         return True
     elif resth <= 10 and resth >= 8:
+        print(resth)
         print("Win")
         return True
     elif resth <= 7 and resth >= 4:
+        print(resth)
         print("Lose")
-        return True
+        return False
     else:
+        print(resth)
         print("Critical lose")
-        return True
+        return False
     
-if throw() is True:
+if throw(-1) is True:
     print("Success")
-else;
-    print("Failure :(")
+else:
+    print(lol)
