@@ -17,11 +17,13 @@ def throw(r): #function for dice
         print(resth)
         print("Critical lose")
         return False
+    
 def load(): #function for "loading" effect
     print("Loading...")
     print("...")
     print("...")
     print("...")
+    
 #intro for the game and possible inputs by user
 print("Welcome, to the *Quest to the Balance* game!")
 print("Balance in the world has been disturbanced and forces from above try to restore or destroy it completly.")
@@ -33,7 +35,7 @@ print("The Life")
 print("The Death")
 
 
-chs = input()
+chs = input() #input for the character
 if chs == "The Life":
     wincond = 0
     print("Life starts her journey to restore balance.")
