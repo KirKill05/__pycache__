@@ -18,7 +18,3 @@ def throw(r):
         print("Critical lose")
         return False
     
-if throw(-1) is True:
-    print("Success")
-else:
-    print(lol)
