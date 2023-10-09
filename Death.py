@@ -1,4 +1,5 @@
-chs == "Death":
+#Death Character
+chs == "Death"
 wincond = 0
 print("Death descends in the depth of its realm.")
 DX = 2

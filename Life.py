@@ -1,3 +1,4 @@
+#Life character
 if chs == "Life":
     wincond = 0
     print("Life starts its journey to restore the balance.")

@@ -3,7 +3,7 @@ def throw(r): #function for dice
     resth = random.randrange(2 + r, 13 + r)
     if resth <= 15 and resth > 10:
         print(resth)
-        print("Critical win")
+        print("Critical Win")
         return True
     elif resth <= 10 and resth >= 8:
         print(resth)
@@ -11,11 +11,11 @@ def throw(r): #function for dice
         return True
     elif resth <= 7 and resth >= 4:
         print(resth)
-        print("Lose")
+        print("Loss")
         return False
     else:
         print(resth)
-        print("Critical lose")
+        print("Critical Loss")
         return False
     
 def load(): #function for "loading" effect
@@ -37,9 +37,9 @@ print("Death")
 
 chs = input() #input for the character
 if chs == "Life":
-    wincond = 0
+    wincond = 0 #varuable responsable for user's win
     print("Life starts its journey to restore the balance.")
-    DX = -1
+    DX = -1 #Character stats
     IQ = 2
     HT = 1
     print("Character stats:")
@@ -84,7 +84,7 @@ if chs == "Life":
     print("Type: throw")
     while True:
         if input() == "throw":
-            if throw(HT) is True:
+            if throw(HT) is True or wincond == 2:
                 print("Going through the thorns you reach the end where light shines like the sun.\n", 
                     "What is left there of the light are imbalanced scales and a little note: 'Til next time =)")
                 wincond += 1
@@ -157,7 +157,7 @@ elif chs == "Death":
     print("Type: throw")
     while True:
         if input() == "throw":
-            if throw(HT) is True:
+            if throw(HT) is True or wincond == 2:
                 print("Poison in the cake was unable to affect you. 'Huh, I knew he was tricking me, but a deal is a deal' Gluttony opens his mouth wide and you get in.", 
                     "Interestingly, you get in the room with imbalanced scales and a little note: 'Til next time =)")
                 wincond += 1
